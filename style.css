@@ -1,4 +1,68 @@
 .casillas-comentarios{
     background-color: rgb(33, 28, 28);
     color: antiquewhite;
+    border-radius: 10px;
+    border-style: double;
+    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-left: 20px;
+    
 }
+#crear-comentario{
+    background-color: black;
+    border-radius: 15px;
+    border-style: double;
+    color: aliceblue;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 20px;
+
+}
+body{
+   background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
+   background-repeat:no-repeat;
+   background-size: 250%;
+   color: aliceblue;
+   border-style: double;
+   padding: 5px;
+   
+
+}
+.conteiner-1{
+    background-color: rgb(48, 47, 47);
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    border-radius: 10%;
+    
+    
+   
+    
+    
+    
+    
+    
+    
+}
+.navbar{
+    background-color: none;
+    display: flex;
+    
+    
+    
+
+
+ 
+    
+    
+
+}
+.punto{
+    display: inline;
+    background-color: aliceblue;
+
+}
+
+
+    
