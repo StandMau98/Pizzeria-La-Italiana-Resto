@@ -1,12 +1,31 @@
 .casillas-comentarios{
     background-color: rgb(33, 28, 28);
     color: antiquewhite;
-    border-radius: 10px;
+    border-radius: 15px;
     border-style: double;
     padding-bottom: 30px;
     padding-top: 5px;
     padding-left: 20px;
     
+}
+@media (max-width: 600px) {
+    .casillas-comentarios{ width: 550px;
+        height: 50px;
+        padding-bottom: 90px;
+    }
+}
+@media (min-width: 600px) {
+            .casillas-comentarios{ width: 550px;
+                height: 50px;
+                padding-bottom: 90px;
+        
+
+    }
+}
+@media (min-width: 760px){
+         .casillas-comentarios{width: 1100px;
+
+}
 }
 #crear-comentario{
     background-color: black;
@@ -16,18 +35,61 @@
     padding-bottom: 30px;
     padding-top: 15px;
     padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+    #crear-comentario{ width: 550px;
+        height: 50px;
+    }
+           
+ 
+}
+@media (min-width: 760px){
+    #crear-comentario{width: 1100px;
+        
 
 }
+}
+
+ 
+
+
+
 body{
    background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
    background-repeat:no-repeat;
    background-size: 250%;
    color: aliceblue;
    border-style: double;
-   padding: 5px;
    
-
+   
+   
 }
+   
+   @media (max-width: 600px) {
+   body { background-repeat: repeat;
+          padding: 50px;
+          width: 630px;
+}
+   
+      
+   }
+
+   @media (min-width: 600px) {
+    body { background-repeat: repeat;
+           padding: 50px;
+           width: 735px;
+        }
+    }
+    @media (min-width: 760px) {
+        body { background-repeat:repeat;
+               padding: 50px;
+               width: 1140px;
+               
+            }
+
+   }
+  
 .conteiner-1{
     background-color: rgb(48, 47, 47);
     margin: 5%;
@@ -65,4 +127,45 @@ body{
 }
 
 
+
+.Carrusel{
+    width: 2000px;
+    height: auto;
+    margin: 10px auto 10px;
+
+    animation: slide 25s infinite ease-in-out;
+}
+.Carrusel ul{
+    display:flex;
+    padding: 0px;
+    width: 400px;
+}
+
+.Carrusel li{
+    list-style: none;
+    width: 300px;
+    margin-left: 400px;
+
+
+}
+.Carrusel img{
+    width: 600px;
+    height: 500px;
+    border:15px;
+    border-style: groove;
+    border-color:rgb(33, 28, 28);
+}
+
+@keyframes slide{
+    0%{margin-left: -10%;}
+    25%{margin-left: -38%;}
+
+    30%{margin-left: -100%;}
+    55%{margin-left: -100%;}
     
+    60%{margin-left: -161%;}
+    90%{margin-left: -30%;}
+
+}
+
+
