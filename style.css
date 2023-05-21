@@ -157,15 +157,50 @@ body{
 }
 
 @keyframes slide{
-    0%{margin-left: -10%;}
-    25%{margin-left: -38%;}
+    0%{margin-left: -50%;}
+    35%{margin-left: -50%;}
 
-    30%{margin-left: -100%;}
-    55%{margin-left: -100%;}
+    45%{margin-left: -150%;}
+    65%{margin-left: -150%;}
     
-    60%{margin-left: -161%;}
-    90%{margin-left: -30%;}
+    70%{margin-left: -250%;}
+    100%{margin-left: -250%;}
+
+}
+@media (max-width: 600px) {
+    .Carrusel { width: 500px;
+        
+    }
+    .Carrusel img{
+        width: 300px;
+        height: auto;
+        
+
+    
+        
+    }
+}
+@media(min-width: 600px) {
+    .Carrusel { width: 300px;
+        
+    }
+    .Carrusel img{
+        width: 300px;
+        height: auto;
+        }
+ 
 
 }
 
+@media (min-width: 760px){
+    .Carrusel { width: 1000px;
+        
+    }
+    .Carrusel img{
+        width: 400px;
+        height: auto;
+        }
+    
+    
 
+}
