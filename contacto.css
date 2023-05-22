@@ -1,0 +1,98 @@
+
+.grid-container{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr ;
+    grid-template-areas: "header header"
+                         "form form" 
+                         "datos mapa";
+    grid-template-rows: 100px 500px 300px;
+    grid-row-gap: 100px;
+   
+}
+
+/*Estilos de las áreas*/
+.header{
+    text-align:center;
+    grid-area: header;
+}
+
+.form{
+    background-color:#F5E7A3;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    grid-area:form;
+}
+
+.datos{
+    background-color: #F5E7A3;  
+    grid-area: datos;
+    text-align: center;
+}
+
+.mapa{
+    background-color: #F5E7A3;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: right;  
+    border-radius: 7px;
+    border-width: 10px 10px 10px 10px;
+    grid-area: mapa;    
+}
+
+/*Estilos de texto, títulos, etc*/
+.titulo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.subtitulo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.texto{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.button{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.casillas{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.container-form{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 100%;
+}
+
+label {
+    display: inline-block;
+    width: 100px;  
+}
+
+
+/*
+-responsive 
+-puntos de corte */
