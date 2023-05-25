@@ -1,3 +1,164 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Tangerine', cursive;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p{
+    font-size: 25px;
+}
+
+body, header, main, footer{
+/*    border: 3px blue solid;*/
+    margin: 0.5rem;
+    background-color: black;
+}
+
+header{
+    background-color: rgba(86, 21, 21, 0.365);
+    display: flex;
+    flex-direction: row;
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+}
+
+#logo{
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+}
+
+.cajaLogo{
+    display: inline;
+    margin: 3px;
+    padding: 3px;
+}
+
+.navbar{
+    font-size: 40px;
+    display: inline;
+    align-content: end;
+    margin:auto;
+    margin-right: 10px;
+    opacity: 1;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar li{
+    display: inline;
+}
+
+main{
+    background-color: black;
+    min-height: 20rem;
+}
+
+#seccion1{
+    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjh54-min.jpg);
+    min-height: 600px;
+    background-position: center;
+    font-size: 50px;
+    color: white;
+    animation-duration: 1.5s;
+}
+
+#seccion1 h2{
+    background-color: black;
+    opacity: 0.7;
+    font-size: 100px;
+    margin: auto;
+}
+
+#seccionMenu{
+    background-image: url(https://img.freepik.com/foto-gratis/harina-suelta-encuentra-fondo-negro_1304-3388.jpg?w=900&t=st=1684719773~exp=1684720373~hmac=6461cf8fe92b09189daa714111c4d6202861b5124181f4cd3ba8f8c4256eef1d);
+}
+
+#seccion3{
+    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
+    min-height: 600px;
+    background-position: center;
+    font-size: 50px;
+    color: white;
+}
+
+#seccion3 h2{
+    background-color: black;
+    opacity: 0.7;
+    font-size: 100px;
+    margin: auto;
+}
+
+.imgComidas{
+    height: auto;
+    width: 27vw;
+    margin: auto;
+}
+
+.cajaComidas{
+    margin: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 28vw;
+    border-radius: 5px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+footer{
+    font-size: 30px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: rgba(86, 21, 21, 0.365);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+}
+
+footer>ul{
+    margin: auto;
+    margin-left: 10px;
+}
+
+footer li{
+    display: inline;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline;
+}
+
+
+
+
+
+/* ACA ARRANCA CSS DE MAURO */
+
+
+
+
+
 .casillas-comentarios{
     background-color: rgb(33, 28, 28);
     color: antiquewhite;
@@ -41,8 +202,6 @@
     #crear-comentario{ width: 550px;
         height: 50px;
     }
-           
- 
 }
 @media (min-width: 760px){
     #crear-comentario{width: 1100px;
@@ -51,21 +210,15 @@
 }
 }
 
- 
-
-
-
+/*
 body{
    background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
    background-repeat:no-repeat;
    background-size: 250%;
    color: aliceblue;
    border-style: double;
-   
-   
-   
 }
-   
+  
    @media (max-width: 600px) {
    body { background-repeat: repeat;
           padding: 50px;
@@ -89,6 +242,8 @@ body{
             }
 
    }
+
+   */
   
 .conteiner-1{
     background-color: rgb(48, 47, 47);
@@ -96,37 +251,13 @@ body{
     display: flex;
     justify-content: center;
     color: aliceblue;
-    border-radius: 10%;
-    
-    
-   
-    
-    
-    
-    
-    
-    
+    border-radius: 10%; 
 }
-.navbar{
-    background-color: none;
-    display: flex;
-    
-    
-    
 
-
- 
-    
-    
-
-}
 .punto{
     display: inline;
     background-color: aliceblue;
-
 }
-
-
 
 .Carrusel{
     width: 2000px;
@@ -135,6 +266,7 @@ body{
 
     animation: slide 25s infinite ease-in-out;
 }
+
 .Carrusel ul{
     display:flex;
     padding: 0px;
@@ -145,8 +277,6 @@ body{
     list-style: none;
     width: 300px;
     margin-left: 400px;
-
-
 }
 .Carrusel img{
     width: 600px;
@@ -174,10 +304,6 @@ body{
     .Carrusel img{
         width: 300px;
         height: auto;
-        
-
-    
-        
     }
 }
 @media(min-width: 600px) {
@@ -204,3 +330,112 @@ body{
     
 
 }
+
+
+
+/*ACA ARRANCA EL CSS DE MARIA EMILIA*/
+
+
+
+/*
+.grid-container{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr ;
+    grid-template-areas: "header header"
+                         "form form" 
+                         "datos mapa";
+    grid-template-rows: 100px 500px 300px;
+    grid-row-gap: 100px;
+   
+}*/
+
+/*Estilos de las áreas*/
+
+.form{
+    background-color:black;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    grid-area:form;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    display: block;
+}
+
+.form label{
+    display: block;
+}
+
+.datos{ 
+    grid-area: datos;
+    text-align: center;
+    color: white;
+}
+
+.datos a{ 
+    text-decoration: none;
+    color: white;
+}
+
+.mapa{
+    background-color: #F5E7A3;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: right;  
+    border-radius: 7px;
+    border-width: 10px 10px 10px 10px;
+    grid-area: mapa;    
+}
+
+/*Estilos de texto, títulos, etc*/
+.titulo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.subtitulo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.texto{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.button{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.casillas{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.container-form{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 100%;
+}
+
+
+/*
+-responsive 
+-puntos de corte */
