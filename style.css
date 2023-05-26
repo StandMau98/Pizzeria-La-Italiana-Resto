@@ -50,7 +50,7 @@ header{
 
 .navbar a{
     text-decoration: none;
-    color: white;
+    color: antiquewhite;
     font-weight: bold;
 }
 
@@ -59,8 +59,8 @@ header{
 }
 
 main{
-    background-color: black;
     min-height: 20rem;
+    color: antiquewhite;
 }
 
 #seccion1{
@@ -68,7 +68,7 @@ main{
     min-height: 600px;
     background-position: center;
     font-size: 50px;
-    color: white;
+    color: antiquewhite;
     animation-duration: 1.5s;
 }
 
@@ -80,7 +80,10 @@ main{
 }
 
 #seccionMenu{
+    color: black;
     background-image: url(https://img.freepik.com/foto-gratis/harina-suelta-encuentra-fondo-negro_1304-3388.jpg?w=900&t=st=1684719773~exp=1684720373~hmac=6461cf8fe92b09189daa714111c4d6202861b5124181f4cd3ba8f8c4256eef1d);
+    background-repeat:no-repeat;
+    background-size: 120%;
 }
 
 #seccion3{
@@ -88,7 +91,7 @@ main{
     min-height: 600px;
     background-position: center;
     font-size: 50px;
-    color: white;
+    color: antiquewhite;
 }
 
 #seccion3 h2{
@@ -144,7 +147,7 @@ footer li{
 
 footer a{
     text-decoration: none;
-    color: white;
+    color: antiquewhite;
     font-weight: bold;
     display: inline;
 }
@@ -156,11 +159,16 @@ footer a{
 /* ACA ARRANCA CSS DE MAURO */
 
 
+.mainNosotros{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
 
+}
 
 
 .casillas-comentarios{
-    background-color: rgb(33, 28, 28);
+    background-color: rgba(86, 21, 21, 0.733);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
     color: antiquewhite;
     border-radius: 15px;
     border-style: double;
@@ -210,15 +218,17 @@ footer a{
 }
 }
 
-/*
+
 body{
-   background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
-   background-repeat:no-repeat;
-   background-size: 250%;
-   color: aliceblue;
-   border-style: double;
+/*    background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
+    background-repeat:no-repeat;
+    background-size: 250%;
+    color: aliceblue;
+    border-style: double;
+    */    
+    background-color: black;
 }
-  
+/*  
    @media (max-width: 600px) {
    body { background-repeat: repeat;
           padding: 50px;
@@ -242,9 +252,7 @@ body{
             }
 
    }
-
-   */
-  
+*/  
 .conteiner-1{
     background-color: rgb(48, 47, 47);
     margin: 5%;
