@@ -5,6 +5,45 @@
     font-family: 'Tangerine', cursive;
 }
 
+@media (max-width: 576px){
+    .cajaComidas{
+        width: 90%;
+    }
+    .pagMenu{
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px ){
+    .cajaComidas{
+        width: 40vw;
+    }
+    .pagMenu{
+        width: 40;
+    }
+}
+
+@media (min-width: 992px){
+    .cajaComidas{
+        width: 45vw;
+    }
+    .pagMenu{
+        width: 42vw;
+    }
+}
+
+@media (min-width: 1200px){
+    .cajaComidas{
+        width: 29.5vw;
+    }
+}
+
+
+
+h1{
+    font-size: 50px;
+}
+
 h3{
     font-size: 30px;
 }
@@ -15,12 +54,13 @@ p{
 
 body, header, main, footer{
 /*    border: 3px blue solid;*/
-    margin: 0.5rem;
+    margin: 0px;
+    padding: 3px;
     background-color: black;
 }
 
 header{
-    background-color: rgba(86, 21, 21, 0.365);
+    background-color: rgba(86, 21, 21, 0.4);
     display: flex;
     flex-direction: row;
     border: 3px rgba(167, 166, 163, 0.452) solid;
@@ -59,7 +99,6 @@ header{
 }
 
 main{
-    min-height: 20rem;
     color: antiquewhite;
 }
 
@@ -77,43 +116,30 @@ main{
     opacity: 0.7;
     font-size: 100px;
     margin: auto;
+    text-align: center;
 }
 
 #seccionMenu{
     color: black;
     background-image: url(https://img.freepik.com/foto-gratis/harina-suelta-encuentra-fondo-negro_1304-3388.jpg?w=900&t=st=1684719773~exp=1684720373~hmac=6461cf8fe92b09189daa714111c4d6202861b5124181f4cd3ba8f8c4256eef1d);
     background-repeat:no-repeat;
-    background-size: 120%;
-}
-
-#seccion3{
-    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
-    min-height: 600px;
-    background-position: center;
-    font-size: 50px;
-    color: antiquewhite;
-}
-
-#seccion3 h2{
-    background-color: black;
-    opacity: 0.7;
-    font-size: 100px;
-    margin: auto;
+    background-size: 125%;
 }
 
 .imgComidas{
     height: auto;
-    width: 27vw;
+    width: 90%;
     margin: auto;
 }
 
 .cajaComidas{
-    margin: 8px;
-    background-color: white;
+    margin: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 28vw;
     border-radius: 5px;
 }
 
@@ -127,11 +153,10 @@ section{
 
 footer{
     font-size: 30px;
-    background-color: black;
     display: flex;
     flex-direction: row;
     align-content: center;
-    background-color: rgba(86, 21, 21, 0.365);
+    background-color: rgba(86, 21, 21, 0.4);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
 }
@@ -153,9 +178,6 @@ footer a{
 }
 
 
-
-
-
 /* ACA ARRANCA CSS DE MAURO */
 
 
@@ -166,7 +188,7 @@ footer a{
 
 
 .casillas-comentarios{
-    background-color: rgba(86, 21, 21, 0.733);
+    background-color: rgba(86, 21, 21, 0.8);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
     color: antiquewhite;
@@ -363,22 +385,28 @@ body{
     background-color:black;
     height: auto;
     width: 100%;
-    text-align: center;
-    grid-area:form;
     color: white;
     font-weight: bold;
-    align-items: center;
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 
-.form label{
-    display: block;
+.form>form{
+    width: 50vw;
 }
 
-.datos{ 
-    grid-area: datos;
-    text-align: center;
+.form>form>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.datos{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     color: white;
+    padding-bottom: 100px;
 }
 
 .datos a{ 
@@ -387,7 +415,7 @@ body{
 }
 
 .mapa{
-    background-color: #F5E7A3;
+    background-color: rgba(86, 21, 21, 0.4);
     height: 400px;
     width: 400px;
     margin: 0 auto;
@@ -399,39 +427,38 @@ body{
 
 /*Estilos de texto, títulos, etc*/
 .titulo{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .subtitulo{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 30px;
 }
 
 .texto{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .button{
+    display: flex;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .casillas{
     height: 50px;
-    width: 300px;
-    text-align: center;
+    width: 35vw;
+    font-size: 25px;
+    text-align: start;
     border-radius: 7px;
 }
 
@@ -442,8 +469,6 @@ body{
     border-radius: 7px;
     padding: 100%;
 }
-
-
 /*
 -responsive 
 -puntos de corte */
