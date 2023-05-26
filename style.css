@@ -7,34 +7,24 @@
 
 @media (max-width: 576px){
     .cajaComidas{
-        width: 90%;
-    }
-    .pagMenu{
-        width: 90%;
+        width: 94%;
     }
 }
+
 
 @media (min-width: 768px ){
     .cajaComidas{
-        width: 40vw;
-    }
-    .pagMenu{
-        width: 40;
+        width: 47%;
     }
 }
 
-@media (min-width: 992px){
-    .cajaComidas{
-        width: 45vw;
-    }
-    .pagMenu{
-        width: 42vw;
-    }
-}
 
 @media (min-width: 1200px){
     .cajaComidas{
-        width: 29.5vw;
+        width: 31%;
+    }
+    .pagMenu{
+        width: 46%;
     }
 }
 
@@ -100,9 +90,16 @@ header{
 
 main{
     color: antiquewhite;
+    align-content: center;
+    width: 100%;
 }
 
 #seccion1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
     background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjh54-min.jpg);
     min-height: 600px;
     background-position: center;
@@ -120,6 +117,11 @@ main{
 }
 
 #seccionMenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
     color: black;
     background-image: url(https://img.freepik.com/foto-gratis/harina-suelta-encuentra-fondo-negro_1304-3388.jpg?w=900&t=st=1684719773~exp=1684720373~hmac=6461cf8fe92b09189daa714111c4d6202861b5124181f4cd3ba8f8c4256eef1d);
     background-repeat:no-repeat;
@@ -141,14 +143,6 @@ main{
     flex-direction: column;
     height: auto;
     border-radius: 5px;
-}
-
-section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
 }
 
 footer{
@@ -178,6 +172,82 @@ footer a{
 }
 
 
+
+/* ACA EMPIEZA CSS MENU */
+
+
+#seccion3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 100vw;
+    margin: 0px;
+    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
+    background-position: center;
+    font-size: 50px;
+    color: antiquewhite;
+}
+
+#seccion4{
+/*
+    background-image: url(https://img.freepik.com/fotos-premium/lonchas-costilla-ternera-plancha-cuchillo-carnicero_89816-20678.jpg);
+*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 100vw;
+    margin: 0px;
+    background-image: url(https://img.freepik.com/fotos-premium/costillas-cerdo-parrilla-ahumadas-salsa-barbacoa-vieja-tabla-cortar-madera-vintage-sobre-fondo-mesa-madera-vieja-aperitivo-sabroso-cerveza-vista-superior_253362-9588.jpg);
+    background-repeat:no-repeat;
+    background-size: 150%;
+    background-position: center;
+    font-size: 50px;
+    color: antiquewhite;
+}
+
+.pagMenu{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+/* ACA ARRANCA CSS SUCURSALES */
+
+.mainSucursales h1{
+    margin: 30px;
+    text-align: center;
+    font-size: 80px;
+}
+
+.ubicacion{
+    width: 42vw;
+    text-align: center;
+    margin: 15px;
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+}
+
+.ubicacion h3{
+    margin: 15px;
+}
+.ubicacion p{
+    margin: 10px;
+}
+
+.map{
+    margin: 10px;
+    width: 38vw;
+}
+
+
+
+
 /* ACA ARRANCA CSS DE MAURO */
 
 
@@ -199,6 +269,7 @@ footer a{
     padding-left: 20px;
     
 }
+/*
 @media (max-width: 600px) {
     .casillas-comentarios{ width: 550px;
         height: 50px;
@@ -241,16 +312,15 @@ footer a{
 }
 
 
-body{
-/*    background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
+/*body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
     background-repeat:no-repeat;
     background-size: 250%;
     color: aliceblue;
-    border-style: double;
-    */    
+    border-style: double;   
     background-color: black;
 }
-/*  
+ 
    @media (max-width: 600px) {
    body { background-repeat: repeat;
           padding: 50px;
@@ -315,7 +385,7 @@ body{
     border-style: groove;
     border-color:rgb(33, 28, 28);
 }
-
+/*
 @keyframes slide{
     0%{margin-left: -50%;}
     35%{margin-left: -50%;}
@@ -325,8 +395,8 @@ body{
     
     70%{margin-left: -250%;}
     100%{margin-left: -250%;}
-
 }
+
 @media (max-width: 600px) {
     .Carrusel { width: 500px;
         
@@ -384,11 +454,15 @@ body{
 .form{
     background-color:black;
     height: auto;
-    width: 100%;
+    width: 97%;
     color: white;
     font-weight: bold;
     display: flex;
+    align-content: center;
     flex-direction: row;
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
 }
 
 .form>form{
@@ -472,3 +546,34 @@ body{
 /*
 -responsive 
 -puntos de corte */
+
+
+/* ACA ARRANCA CSS SUCURSALES */
+
+.mainSucursales h1{
+    margin: 30px;
+    text-align: center;
+    font-size: 80px;
+}
+
+.ubicacion{
+    width: 42vw;
+    text-align: center;
+    margin: 15px;
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+}
+
+.ubicacion h3{
+    margin: 15px;
+}
+.ubicacion p{
+    margin: 10px;
+}
+
+.map{
+    margin: 10px;
+    width: 30vw;
+    height: 30vw;
+}
