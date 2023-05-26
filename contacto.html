@@ -1,76 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/pizza-slice.ico" title="pizza icons">
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="shortcut icon" href="img/pizza-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <!--<link rel="preconnect" href="https://fonts.googleapis.com">--> 
     <!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>--> 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" href="/img/pizza.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <title>Contacto</title>
-    <div class="conteiner-1">
-        <nav class="navbar">
-         <ul class="lista">
-             <li class="punto">
-             <a href="index.html">Inicio</a>
-            </li>
-           <li class="punto">
-            <a href="contacto.html">Contacto</a>
-           </li> 
-            <li class="punto">
-                <a href="servicios.html">servicios</a>
-            </li>
-            <li class="punto">
-                <a href="quienessomos.html">¿Quienes somos?</a>
-            </li>
-         </ul>
-        </nav>
-    </div>
 </head>
 
 <body>
-    <div class="grid-container"> 
-        <div class ="header">
-            <img src="img/pizza-slice.ico" height="75px" width="75px">
-            <h4 class="titulo">Contacto</h4>
-        </div>
-        <div class="form">
-            <h3 class="subtitulo">Consultas</h4>
-            <div >
-                <form action="">
-                    <label class="texto" id="name" size="15px" maxlength="30px">Nombre:</label>
-                    <input class="casillas" type="text" id="name" name="name" required><br><br>
-                    
-                    <label class="texto" id="celular" size="15px" maxlength="30px">Celular:</label>
-                    <input class="casillas" type="celular" id="celular" name="celular" required><br><br>
 
+    <header>
+        <div class="cajaLogo">
+            <img src="img/pizza.png" alt="Logo de página" id="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>  
+        </nav>       
+    </header>
+
+    <main>
+        <h3 class="titulo">Consultas</h4>
+        <section class="form">
+            <form action="">
+                <div>
+                    <label class="texto" id="name" size="15px" maxlength="30px">Nombre:</label>
+                    <input class="casillas" type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label class="texto" id="celular" size="15px" maxlength="30px">Celular:</label>
+                    <input class="casillas" type="celular" id="celular" name="celular" required>
+                </div>
+                <div>    
                     <label class="texto" id="email" size="15px" maxlength="30px">Email:</label>
-                    <input class="casillas"  type="email" id="email" name="email" required><br><br>
-                
-                    <label class="texto" for="message">Message:</label>
-                    <textarea class="casillas" id="message" name="message" rows="4" cols="30"></textarea><br><br>
-                    <!--<button onclick="mensaje()">Enviar consulta</button>-->
-                    <input class="button" type="submit" value="Enviar">
-                </form>
+                    <input class="casillas"  type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label class="texto" for="message">Mensaje:</label>
+                    <textarea class="casillas" id="message" name="message" rows="4" cols="30"></textarea>
+                </div>
+                <!--<button onclick="mensaje()">Enviar consulta</button>-->
+                <input class="button" type="submit" value="Enviar">
+            </form>
+            <div class="datos">
+                <h3 class="subtitulo">Datos</h3>
+                <a href="https://www.whatsapp.com/"><img src="img/whatsapp.png" width="20" height="20">  +54911123456789</img></a>
+                <a href="https://www.instagram.com/"><img src="img/instagram.ico" width="20" height="20">  restauranteItaliano</img></a>
+                <a href="https://restaurtanteItaliano@gmail.com/">restauranteItaliano@gmail.com</a>
             </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.mcdonalds.com.ar/politica-de-privacidad">Política de Privacidad</a></li>
+            <li><a href="https://www.buenosaires.gob.ar/defensaconsumidor">Defensa del Consumidor</a></li>
+            <li><a href="https://www.mcdonalds.com.ar/proteccion-datos-personales">Protección de datos personales</a></li>
+        </ul>  
+        <div class="cajaLogo">
+            <img src="img/pizza.png" alt="Logo de página" id="logo" title="Pizzeria 2023">
         </div>
-        <div><br><br><br></div> <!--Sacarlo-->
-        <div class="datos">
-            <p class="datos">
-                <h3 class="subtitulo">Datos</h4>
-                <a href="https://www.whatsapp.com/"><img src="img/whatsapp.png" width="15" height="15">  +54911123456789</img></a><br><br>
-                <a href="https://www.instagram.com/"><img src="img/instagram.ico" width="15" height="15">  restauranteItaliano</img></a><br><br>
-                <a href="https://restaurtanteItaliano@gmail.com/">restauranteItaliano@gmail.com</a><br>
-            </p>
-        </div>
-        <div class="mapa">
-            <h3 class="subtitulo">Ubicación</h4>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d41306.18274689361!2d-58.44697545715933!3d-34.58596624860163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spizza%20!5e0!3m2!1sen!2sar!4v1684548671416!5m2!1sen!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
-        </div>
-    </div>
+    </footer>
+
 </body>
 </html>
