@@ -182,7 +182,6 @@ footer a{
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    width: 100vw;
     margin: 0px;
     background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
     background-position: center;
@@ -218,32 +217,7 @@ footer a{
 
 /* ACA ARRANCA CSS SUCURSALES */
 
-.mainSucursales h1{
-    margin: 30px;
-    text-align: center;
-    font-size: 80px;
-}
 
-.ubicacion{
-    width: 42vw;
-    text-align: center;
-    margin: 15px;
-    background-color: rgba(86, 21, 21, 0.4);
-    border: 3px rgba(167, 166, 163, 0.452) solid;
-    border-radius: 15px;
-}
-
-.ubicacion h3{
-    margin: 15px;
-}
-.ubicacion p{
-    margin: 10px;
-}
-
-.map{
-    margin: 10px;
-    width: 38vw;
-}
 
 
 
@@ -452,14 +426,16 @@ footer a{
 /*Estilos de las áreas*/
 
 .form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
     background-color:black;
     height: auto;
     width: 97%;
     color: white;
     font-weight: bold;
-    display: flex;
-    align-content: center;
-    flex-direction: row;
     background-color: rgba(86, 21, 21, 0.4);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
@@ -554,6 +530,14 @@ footer a{
     margin: 30px;
     text-align: center;
     font-size: 80px;
+}
+
+.mainSucursales section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .ubicacion{
