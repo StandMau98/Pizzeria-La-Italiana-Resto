@@ -254,10 +254,7 @@ footer a{
 /* ACA ARRANCA CSS DE MAURO */
 
 
-.mainNosotros{
-    background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
 
-}
 
 
 .casillas-comentarios{
@@ -269,10 +266,11 @@ footer a{
     border-style: double;
     padding-bottom: 30px;
     padding-top: 5px;
-    padding-left: 20px;
+    padding-left: 0px;
+    margin-right: 210px;
     
 }
-/*
+
 @media (max-width: 600px) {
     .casillas-comentarios{ width: 550px;
         height: 50px;
@@ -293,13 +291,16 @@ footer a{
 }
 }
 #crear-comentario{
-    background-color: black;
+    background-color: rgb(54, 52, 52);
     border-radius: 15px;
     border-style: double;
     color: aliceblue;
     padding-bottom: 30px;
-    padding-top: 15px;
-    padding-left: 20px;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+    
 }
 
 @media (max-width: 600px) {
@@ -310,13 +311,14 @@ footer a{
 @media (min-width: 760px){
     #crear-comentario{width: 1100px;
         
+        
 
 }
 }
 
 
-/*body{
-    background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
+#cuerpo{
+    background-image:  url(https://img.freepik.com/foto-gratis/harina-suelta-encuentra-fondo-negro_1304-3388.jpg?w=900&t=st=1684719773~exp=1684720373~hmac=6461cf8fe92b09189daa714111c4d6202861b5124181f4cd3ba8f8c4256eef1d);
     background-repeat:no-repeat;
     background-size: 250%;
     color: aliceblue;
@@ -347,7 +349,7 @@ footer a{
             }
 
    }
-*/  
+ */
 .conteiner-1{
     background-color: rgb(48, 47, 47);
     margin: 5%;
@@ -367,7 +369,7 @@ footer a{
     height: auto;
     margin: 10px auto 10px;
 
-    animation: slide 25s infinite ease-in-out;
+    animation: slide 15s infinite ease-in-out;
 }
 
 .Carrusel ul{
@@ -388,16 +390,16 @@ footer a{
     border-style: groove;
     border-color:rgb(33, 28, 28);
 }
-/*
-@keyframes slide{
-    0%{margin-left: -50%;}
-    35%{margin-left: -50%;}
 
-    45%{margin-left: -150%;}
-    65%{margin-left: -150%;}
+@keyframes slide{
+    0%{margin-left: 0%;}
+    35%{margin-left: 0%;}
+
+    45%{margin-left: -100%;}
+    65%{margin-left: -100%;}
     
-    70%{margin-left: -250%;}
-    100%{margin-left: -250%;}
+    70%{margin-left: -150%;}
+    100%{margin-left: -150%;}
 }
 
 @media (max-width: 600px) {
