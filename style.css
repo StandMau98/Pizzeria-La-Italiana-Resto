@@ -17,6 +17,15 @@
     .ubicacion{
         width: 96%;
     }
+    .navbar{
+        font-size: 80px;
+        display: block;
+        align-content: end;
+        margin:auto;
+    }
+    .navbar li{
+        display: block;
+    }
 }
 
 
@@ -27,15 +36,24 @@
     .pagMenu{
         width: 46%;
     }
+    .ubicacion{
+        width: 45%;
+    }
+    .navbar{
+        font-size: 50px;
+        display: inline;
+        align-content: end;
+        margin:auto;
+    }
+    .navbar li{
+        display: inline;
+    }
 }
 
 
 @media (min-width: 1200px){
     .cajaComidas{
         width: 31%;
-    }
-    .ubicacion{
-        width: 46%;
     }
 }
 
@@ -79,9 +97,6 @@ header{
 }
 
 .navbar{
-    font-size: 50px;
-    display: inline;
-    align-content: end;
     margin:auto;
     margin-right: 10px;
     opacity: 1;
@@ -92,10 +107,6 @@ header{
     text-decoration: none;
     color: antiquewhite;
     font-weight: bold;
-}
-
-.navbar li{
-    display: inline;
 }
 
 main{
@@ -197,25 +208,18 @@ footer a{
     margin: 0px;
     background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
     background-position: center;
-    font-size: 50px;
     color: antiquewhite;
 }
 
 #seccion4{
-/*
-    background-image: url(https://img.freepik.com/fotos-premium/lonchas-costilla-ternera-plancha-cuchillo-carnicero_89816-20678.jpg);
-*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
     margin: 0px;
-    background-image: url(https://img.freepik.com/fotos-premium/costillas-cerdo-parrilla-ahumadas-salsa-barbacoa-vieja-tabla-cortar-madera-vintage-sobre-fondo-mesa-madera-vieja-aperitivo-sabroso-cerveza-vista-superior_253362-9588.jpg);
-    background-repeat:no-repeat;
-    background-size: 150%;
+    background-image: url(https://res.cloudinary.com/norgesgruppen/images/c_scale,dpr_auto,f_auto,q_auto:eco,w_1600/xlh7ehmaozm5kzyob4yo/saftige-spareribs-kokt-i-coca-cola);   
     background-position: center;
-    font-size: 50px;
     color: antiquewhite;
 }
 
@@ -549,14 +553,15 @@ footer a{
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+    background-image: url(https://totale.es/wp-content/uploads/2022/02/donde-comer-pizza-en-madrid.jpg);
 }
 
 .ubicacion{
-    text-align: center;
-    margin: 5px;
-    background-color: rgba(86, 21, 21, 0.4);
+    background-color: rgba(0, 0, 0, 0.85);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
+    margin: 5px;
+    text-align: center;
 }
 
 .ubicacion h3{
@@ -568,7 +573,7 @@ footer a{
 
 .map{
     margin: 10px;
-    width: 90%;
-    height: 35vw;
+    height: 300px;
+    width: 300px;
     border-radius: 15px;
 }
