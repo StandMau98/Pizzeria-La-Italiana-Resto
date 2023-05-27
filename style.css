@@ -1,8 +1,7 @@
 *{
     margin: 5px;
     padding: 5px;
-    font-family: 'Tangerine', cursive;
-    font-family: 'Tangerine', cursive;
+    font-family: 'Charm', cursive;
 }
 
 @media (max-width: 576px){
@@ -11,10 +10,22 @@
     }
 }
 
+@media (min-width: 576px){
+    .pagMenu{
+        width: 96%;
+    }
+    .ubicacion{
+        width: 96%;
+    }
+}
+
 
 @media (min-width: 768px ){
     .cajaComidas{
         width: 47%;
+    }
+    .pagMenu{
+        width: 46%;
     }
 }
 
@@ -23,23 +34,21 @@
     .cajaComidas{
         width: 31%;
     }
-    .pagMenu{
+    .ubicacion{
         width: 46%;
     }
 }
 
-
-
 h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 h3{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 p{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 body, header, main, footer{
@@ -70,7 +79,7 @@ header{
 }
 
 .navbar{
-    font-size: 40px;
+    font-size: 50px;
     display: inline;
     align-content: end;
     margin:auto;
@@ -79,6 +88,7 @@ header{
 }
 
 .navbar a{
+    font-family: 'Tangerine', cursive;
     text-decoration: none;
     color: antiquewhite;
     font-weight: bold;
@@ -109,6 +119,7 @@ main{
 }
 
 #seccion1 h2{
+    font-family: 'Tangerine', cursive;
     background-color: black;
     opacity: 0.7;
     font-size: 100px;
@@ -146,7 +157,7 @@ main{
 }
 
 footer{
-    font-size: 30px;
+    font-size: 40px;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -165,6 +176,7 @@ footer li{
 }
 
 footer a{
+    font-family: 'Tangerine', cursive;
     text-decoration: none;
     color: antiquewhite;
     font-weight: bold;
@@ -528,7 +540,7 @@ footer a{
 .mainSucursales h1{
     margin: 30px;
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .mainSucursales section{
@@ -540,9 +552,8 @@ footer a{
 }
 
 .ubicacion{
-    width: 42vw;
     text-align: center;
-    margin: 15px;
+    margin: 5px;
     background-color: rgba(86, 21, 21, 0.4);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
@@ -557,6 +568,7 @@ footer a{
 
 .map{
     margin: 10px;
-    width: 30vw;
-    height: 30vw;
+    width: 90%;
+    height: 35vw;
+    border-radius: 15px;
 }
