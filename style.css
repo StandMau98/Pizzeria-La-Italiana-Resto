@@ -487,6 +487,12 @@ footer a{
 
 }
 
+.datos a{
+    font-size: 25px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
 
 /*Estilos de texto, títulos, etc*/
 .titulo{
