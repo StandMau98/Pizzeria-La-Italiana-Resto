@@ -424,20 +424,6 @@ footer a{
 
 /*ACA ARRANCA EL CSS DE MARIA EMILIA*/
 
-
-
-/*
-.grid-container{
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr ;
-    grid-template-areas: "header header"
-                         "form form" 
-                         "datos mapa";
-    grid-template-rows: 100px 500px 300px;
-    grid-row-gap: 100px;
-   
-}*/
-
 /*Estilos de las áreas*/
 
 .form{
@@ -448,13 +434,17 @@ footer a{
     align-content: center;
     background-color:black;
     height: auto;
-    width: 97%;
+    width: 98,2%;
     color: white;
     font-weight: bold;
     background-color: rgba(86, 21, 21, 0.4);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
-}
+    margin-bottom: 3%;
+    margin-left: 0,9%;
+    margin-right: 0,9%;
+
+}   
 
 .form>form{
     width: 50vw;
@@ -465,30 +455,24 @@ footer a{
     justify-content: space-between;
 }
 
-.datos{
-    font-size: 30px;
+.datos {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
-    color: white;
+    width:98,2%;
+    margin-bottom: 3%;
+    margin-left: 0,9%;
+    margin-right: 0,9%;
     padding-bottom: 100px;
-}
-
-.datos a{ 
-    text-decoration: none;
-    color: white;
-}
-
-.mapa{
     background-color: rgba(86, 21, 21, 0.4);
-    height: 400px;
-    width: 400px;
-    margin: 0 auto;
-    text-align: right;  
-    border-radius: 7px;
-    border-width: 10px 10px 10px 10px;
-    grid-area: mapa;    
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    font-size: 100%;
+    color: white;
+    text-align: center;
+
 }
+
 
 /*Estilos de texto, títulos, etc*/
 .titulo{
@@ -511,12 +495,13 @@ footer a{
 
 .button{
     display: flex;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Charm', cursive;
     font-size: 18px;
     text-align: center;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-radius: 8px;
 }
 
 .casillas{
@@ -527,16 +512,30 @@ footer a{
     border-radius: 7px;
 }
 
-.container-form{
-    height: 50px;
-    width: 300px;
-    text-align: center;
-    border-radius: 7px;
-    padding: 100%;
+/*media queries */
+@media (max-width:600px){
+    /*Celular*/    
+    .casillas{
+        width: 50%;
+    }
 }
-/*
--responsive 
--puntos de corte */
+
+@media (min-width:600px){
+    /*Tablet*/    
+    .casillas{
+        width: 60%;
+    }
+    
+}
+
+@media (min-width:720px) {
+    /*Computadora*/
+
+    .casillas{
+        width: 50%;
+    }
+
+}
 
 
 /* ACA ARRANCA CSS SUCURSALES */

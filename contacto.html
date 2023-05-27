@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/pizza-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/img/pizza.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/pizza.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menu</a></li>
+                <li><a href="menu.html">Menú</a></li>
                 <li><a href="sucursales.html">Sucursales</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -38,35 +38,35 @@
     <main>
         <h3 class="titulo">Consultas</h4>
         <section class="form">
-            <form action="">
-                <div>
-                    <label class="texto" id="name" size="15px" maxlength="30px">Nombre:</label>
-                    <input class="casillas" type="text" id="name" name="name" required>
+            <form  onsubmit="return validateForm()" >    
+                 <div>
+                    <label for="nombre" class="texto"> Nombre:</label>
+                    <input class="casillas" type="text"  id="nombre" name="nombre" required>
                 </div>
                 <div>
-                    <label class="texto" id="celular" size="15px" maxlength="30px">Celular:</label>
+                    <label for="celular" class="texto" >Celular:</label>
                     <input class="casillas" type="celular" id="celular" name="celular" required>
                 </div>
                 <div>    
-                    <label class="texto" id="email" size="15px" maxlength="30px">Email:</label>
+                    <label for="email" class="texto">Email:</label>
                     <input class="casillas"  type="email" id="email" name="email" required>
                 </div>
                 <div>
-                    <label class="texto" for="message">Mensaje:</label>
-                    <textarea class="casillas" id="message" name="message" rows="4" cols="30"></textarea>
+                    <label for="mensaje" class="texto" >Mensaje:</label>
+                    <textarea class="casillas" id="mensaje" name="mensaje" rows="4" cols="30" required></textarea>
                 </div>
-                <!--<button onclick="mensaje()">Enviar consulta</button>-->
+                
                 <input class="button" type="submit" value="Enviar">
             </form>
-            <div class="datos">
-                <h3 class="subtitulo">Datos</h3>
-                <a href="https://www.whatsapp.com/"><img src="img/whatsapp.png" width="20" height="20">  +54911123456789</img></a>
-                <a href="https://www.instagram.com/"><img src="img/instagram.ico" width="20" height="20">  restauranteItaliano</img></a>
-                <a href="https://restaurtanteItaliano@gmail.com/">restauranteItaliano@gmail.com</a>
-            </div>
         </section>
+        <div class="datos">
+            <h3 class="subtitulo">Datos</h3>
+            <a href="https://www.whatsapp.com/"><img src="img/whatsapp.png" width="20" height="20">  +54911123456789</img></a>
+            <a href="https://www.instagram.com/"><img src="img/instagram.ico" width="20" height="20">  laBohemiapizzas</img></a>
+            <a href="https://www.gmail.com/">labohemiapizzeria@gmail.com</a>
+        </div>
     </main>
-
+    
     <footer>
         <ul>
             <li><a href="https://www.mcdonalds.com.ar/politica-de-privacidad">Política de Privacidad</a></li>
@@ -77,6 +77,8 @@
             <img src="img/pizza.png" alt="Logo de página" id="logo" title="Pizzeria 2023">
         </div>
     </footer>
+    
+    <script src="contacto.js"></script>
 
 </body>
 </html>
