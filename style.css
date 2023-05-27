@@ -1,8 +1,7 @@
 *{
     margin: 5px;
     padding: 5px;
-    font-family: 'Tangerine', cursive;
-    font-family: 'Tangerine', cursive;
+    font-family: 'Charm', cursive;
 }
 
 @media (max-width: 576px){
@@ -11,10 +10,43 @@
     }
 }
 
+@media (min-width: 576px){
+    .pagMenu{
+        width: 96%;
+    }
+    .ubicacion{
+        width: 96%;
+    }
+    .navbar{
+        font-size: 80px;
+        display: block;
+        align-content: end;
+        margin:auto;
+    }
+    .navbar li{
+        display: block;
+    }
+}
+
 
 @media (min-width: 768px ){
     .cajaComidas{
         width: 47%;
+    }
+    .pagMenu{
+        width: 46%;
+    }
+    .ubicacion{
+        width: 45%;
+    }
+    .navbar{
+        font-size: 50px;
+        display: inline;
+        align-content: end;
+        margin:auto;
+    }
+    .navbar li{
+        display: inline;
     }
 }
 
@@ -23,23 +55,18 @@
     .cajaComidas{
         width: 31%;
     }
-    .pagMenu{
-        width: 46%;
-    }
 }
 
-
-
 h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 h3{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 p{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 body, header, main, footer{
@@ -70,22 +97,16 @@ header{
 }
 
 .navbar{
-    font-size: 40px;
-    display: inline;
-    align-content: end;
     margin:auto;
     margin-right: 10px;
     opacity: 1;
 }
 
 .navbar a{
+    font-family: 'Tangerine', cursive;
     text-decoration: none;
     color: antiquewhite;
     font-weight: bold;
-}
-
-.navbar li{
-    display: inline;
 }
 
 main{
@@ -109,6 +130,7 @@ main{
 }
 
 #seccion1 h2{
+    font-family: 'Tangerine', cursive;
     background-color: black;
     opacity: 0.7;
     font-size: 100px;
@@ -146,7 +168,7 @@ main{
 }
 
 footer{
-    font-size: 30px;
+    font-size: 40px;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -165,6 +187,7 @@ footer li{
 }
 
 footer a{
+    font-family: 'Tangerine', cursive;
     text-decoration: none;
     color: antiquewhite;
     font-weight: bold;
@@ -185,26 +208,18 @@ footer a{
     margin: 0px;
     background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
     background-position: center;
-    font-size: 50px;
     color: antiquewhite;
 }
 
 #seccion4{
-/*
-    background-image: url(https://img.freepik.com/fotos-premium/lonchas-costilla-ternera-plancha-cuchillo-carnicero_89816-20678.jpg);
-*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    width: 100vw;
     margin: 0px;
-    background-image: url(https://img.freepik.com/fotos-premium/costillas-cerdo-parrilla-ahumadas-salsa-barbacoa-vieja-tabla-cortar-madera-vintage-sobre-fondo-mesa-madera-vieja-aperitivo-sabroso-cerveza-vista-superior_253362-9588.jpg);
-    background-repeat:no-repeat;
-    background-size: 150%;
+    background-image: url(https://res.cloudinary.com/norgesgruppen/images/c_scale,dpr_auto,f_auto,q_auto:eco,w_1600/xlh7ehmaozm5kzyob4yo/saftige-spareribs-kokt-i-coca-cola);   
     background-position: center;
-    font-size: 50px;
     color: antiquewhite;
 }
 
@@ -529,7 +544,7 @@ footer a{
 .mainSucursales h1{
     margin: 30px;
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .mainSucursales section{
@@ -538,15 +553,15 @@ footer a{
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+    background-image: url(https://totale.es/wp-content/uploads/2022/02/donde-comer-pizza-en-madrid.jpg);
 }
 
 .ubicacion{
-    width: 42vw;
-    text-align: center;
-    margin: 15px;
-    background-color: rgba(86, 21, 21, 0.4);
+    background-color: rgba(0, 0, 0, 0.85);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
+    margin: 5px;
+    text-align: center;
 }
 
 .ubicacion h3{
@@ -558,6 +573,7 @@ footer a{
 
 .map{
     margin: 10px;
-    width: 30vw;
-    height: 30vw;
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
 }
