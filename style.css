@@ -16,6 +16,10 @@
     .cajaComidas{
         width: 94%;
     }
+    #logo{
+        height: 60px;
+        width: 60px;
+    }
     .navbar{
         font-size: 40px;
         display: block;
@@ -63,6 +67,10 @@
     .ubicacion{
         width: 96%;
     }
+    #logo{
+        height: 6vw;
+        width: 6vw;
+    }
     .navbar{
         font-size: 4vw;
         display: flex;
@@ -82,7 +90,7 @@
         display: inline;
     }
     footer{
-        font-size: 3.5vw;
+        font-size: 3vw;
         display: flex;
         flex-direction: row;
     }
@@ -144,8 +152,6 @@ header{
 }
 
 #logo{
-    height: 70px;
-    width: 70px;
     display: inline-block;
 }
 
@@ -179,8 +185,8 @@ main{
     justify-content: space-around;
     align-content: center;
     background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjh54-min.jpg);
-    min-height: 40vw;
-    background-size: 123%;
+    min-height: 50vw;
+    background-size: 150%;
     background-position: center;
     color: antiquewhite;
     animation-duration: 1s;
