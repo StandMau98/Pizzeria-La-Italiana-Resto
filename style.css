@@ -4,9 +4,7 @@
     font-family: 'Charm', cursive;
 }
 
-
 /* Media queries */
-
 
 @media (max-width: 576px){
     header{
@@ -136,14 +134,13 @@
     }
 }
 
+/* ACA EMPIEZA CSS INDEX */
+
 body, header, main, footer{
-/*    border: 3px blue solid;*/
     margin: 0px;
     padding: 3px;
     background-color: black;
 }
-
-
 
 header{
     background-color: rgba(86, 21, 21, 0.4);
@@ -172,12 +169,6 @@ header{
     font-weight: bold;
 }
 
-#weatherParagraph{
-    font-size: small;
-    color: white;
-    text-align: right;
-}
-
 main{
     color: antiquewhite;
     align-content: center;
@@ -192,7 +183,7 @@ main{
     align-content: center;
     background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjh54-min.jpg);
     min-height: 50vw;
-    background-size: 150%;
+    background-size: 170%;
     background-position: center;
     color: antiquewhite;
     animation-duration: 1s;
@@ -202,7 +193,7 @@ main{
     font-family: 'Tangerine', cursive;
     background-color: black;
     opacity: 0.7;
-    font-size: 8vw;
+    font-size: 10vw;
     margin: auto;
     text-align: center;
 }
@@ -264,10 +255,7 @@ footer a{
     display: inline;
 }
 
-
-
 /* ACA EMPIEZA CSS MENU */
-
 
 #seccion3{
     display: flex;
@@ -300,15 +288,60 @@ footer a{
     margin: 5px;
 }
 
-/* ACA ARRANCA CSS SUCURSALES */
+/* ACA EMPIEZA CSS SUCURSALES */
 
+#weatherParagraph{
+    font-size: 2.5vw;
+    color: antiquewhite;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    margin: 5px;
+}
 
+.mainSucursales h1{
+    margin: 30px;
+    text-align: center;
+    font-size: 60px;
+}
 
+.mainSucursales section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-image: url(https://totale.es/wp-content/uploads/2022/02/donde-comer-pizza-en-madrid.jpg);
+}
 
+.ubicacion{
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    margin: 5px;
+    text-align: center;
+    vertical-align: auto;
+}
 
+.ubicacion>div{
+    margin: auto;
+}
 
-/* ACA ARRANCA CSS DE MAURO */
+.ubicacion h3{
+    margin: 5px;
+}
+.ubicacion p{
+    margin: 5px;
+}
 
+.map{
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+/* ACA ARRANCA CSS NOSOTROS */
 
 .mainNosotros{
     display: flex;
@@ -338,97 +371,7 @@ footer a{
     list-style: none;
 }
 
-.conteiner-1{
-    background-color: rgb(48, 47, 47);
-    margin: 5%;
-    display: flex;
-    justify-content: center;
-    color: aliceblue;
-    border-radius: 10%; 
-}
-
-.punto{
-    display: inline;
-    background-color: aliceblue;
-}
-
-.Carrusel{
-    width: 2000px;
-    height: auto;
-    margin: 10px auto 10px;
-
-    animation: slide 15s infinite ease-in-out;
-}
-
-.Carrusel ul{
-    display:flex;
-    padding: 0px;
-    width: 400px;
-}
-
-.Carrusel li{
-    list-style: none;
-    width: 300px;
-    margin-left: 400px;
-}
-.Carrusel img{
-    width: 600px;
-    height: 500px;
-    border:15px;
-    border-style: groove;
-    border-color:rgb(33, 28, 28);
-}
-
-@keyframes slide{
-    0%{margin-left: 0%;}
-    35%{margin-left: 0%;}
-
-    45%{margin-left: -100%;}
-    65%{margin-left: -100%;}
-    
-    70%{margin-left: -150%;}
-    100%{margin-left: -150%;}
-}
-
-@media (max-width: 600px) {
-    .Carrusel { width: 500px;
-        
-    }
-    .Carrusel img{
-        width: 300px;
-        height: auto;
-    }
-}
-@media(min-width: 600px) {
-    .Carrusel { width: 300px;
-        
-    }
-    .Carrusel img{
-        width: 300px;
-        height: auto;
-        }
- 
-
-}
-
-@media (min-width: 760px){
-    .Carrusel { width: 1000px;
-        
-    }
-    .Carrusel img{
-        width: 400px;
-        height: auto;
-        }
-    
-    
-
-}
-
-
-
-
-
-/*ACA ARRANCA EL CSS DE MARIA EMILIA*/
+/*ACA EMPIEZA EL CSS DE CONTACTO*/
 
 /*Estilos de las áreas*/
 
@@ -477,7 +420,7 @@ footer a{
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
     font-size: 100%;
-    color: white;
+    color: antiquewhite;
     text-align: center;
 
 }
@@ -525,47 +468,4 @@ footer a{
 
 #mensaje{
     height: 120px;
-}
-
-/* ACA ARRANCA CSS SUCURSALES */
-
-.mainSucursales h1{
-    margin: 30px;
-    text-align: center;
-    font-size: 60px;
-}
-
-.mainSucursales section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    background-image: url(https://totale.es/wp-content/uploads/2022/02/donde-comer-pizza-en-madrid.jpg);
-}
-
-.ubicacion{
-    background-color: rgba(0, 0, 0, 0.85);
-    border: 3px rgba(167, 166, 163, 0.452) solid;
-    border-radius: 15px;
-    margin: 5px;
-    text-align: center;
-    vertical-align: auto;
-}
-
-.ubicacion>div{
-    margin: auto;
-}
-
-.ubicacion h3{
-    margin: 5px;
-}
-.ubicacion p{
-    margin: 5px;
-}
-
-.map{
-    height: 250px;
-    width: 250px;
-    border-radius: 15px;
 }
