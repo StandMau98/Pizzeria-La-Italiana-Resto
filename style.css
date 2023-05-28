@@ -9,13 +9,17 @@
 
 
 @media (max-width: 576px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
     .cajaComidas{
         width: 94%;
     }
     .navbar{
-        font-size: 50px;
+        font-size: 40px;
         display: block;
-        align-content: end;
+        align-content: center;
         margin:auto;
     }
     .navbar li{
@@ -40,9 +44,19 @@
     footer li{
         display: block;
     }
+    footer{
+        font-size: 35px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 576px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .pagMenu{
         width: 96%;
     }
@@ -50,10 +64,10 @@
         width: 96%;
     }
     .navbar{
-        font-size: 50px;
-        display: inline;
-        align-content: end;
-        margin:auto;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
     }
     .navbar li{
         display: inline;
@@ -65,7 +79,12 @@
         width: 75%;
     }
     footer li{
-        display: block;
+        display: inline;
+    }
+    footer{
+        font-size: 3.5vw;
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -88,13 +107,13 @@
     .form>form>div{
         width: 70%;
     }
-    footer li{
-        display: inline;
-    }
 }
 
 
 @media (min-width: 1200px){
+    .navbar{
+        font-size: 50px;
+    }
     .cajaComidas{
         width: 31%;
     }
@@ -103,6 +122,9 @@
     }
     .form>form>div{
         width: 50%;
+    }
+    footer{
+        font-size: 4vw;
     }
 }
 
@@ -117,8 +139,6 @@ body, header, main, footer{
 
 header{
     background-color: rgba(86, 21, 21, 0.4);
-    display: flex;
-    flex-direction: row;
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
 }
@@ -136,7 +156,6 @@ header{
 
 .navbar{
     margin:auto;
-    margin-right: 10px;
     opacity: 1;
 }
 
@@ -214,9 +233,7 @@ main{
 }
 
 footer{
-    font-size: 40px;
-    display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-content: center;
     background-color: rgba(86, 21, 21, 0.4);
     border: 3px rgba(167, 166, 163, 0.452) solid;
@@ -225,7 +242,6 @@ footer{
 
 footer>ul{
     margin: auto;
-    margin-left: 10px;
 }
 
 footer a{
