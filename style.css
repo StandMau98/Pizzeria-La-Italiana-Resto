@@ -172,6 +172,12 @@ header{
     font-weight: bold;
 }
 
+#weatherParagraph{
+    font-size: small;
+    color: white;
+    text-align: right;
+}
+
 main{
     color: antiquewhite;
     align-content: center;

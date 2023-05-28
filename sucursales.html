@@ -27,11 +27,32 @@
                 <li><a href="sucursales.html">Sucursales</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-            </ul>  
+            </ul> 
         </nav>       
     </header>
 
     <main class="mainSucursales">
+        <p id="weatherParagraph" class="titulo"></p>
+        <script>
+            fetch('https://api.openweathermap.org/data/2.5/weather?lat=-34.6&lon=-58.3&appid=55f07957c709e674d9a0c404699b3661')
+              .then(response => response.json())
+              .then(data => {
+                // Extract the necessary information from the data object
+                const temperature = data.main.temp;   
+                const temperatureInCelsius= temperature-273.15    
+                // Create the paragraph content using the extracted information
+                const paragraphContent = `La temperatura actual es ${temperatureInCelsius.toFixed(1)}°C.`;
+        
+                // Update the paragraph text
+                const weatherParagraph = document.getElementById('weatherParagraph');
+                weatherParagraph.textContent = paragraphContent;
+                console.log(data);
+              })
+              .catch(err => {
+                const weatherParagraph = document.getElementById('weatherParagraph');
+                weatherParagraph.textContent = "Failed to fetch weather data.";
+              });
+            </script>
         <section>
             <div class="ubicacion">
                 <div>
