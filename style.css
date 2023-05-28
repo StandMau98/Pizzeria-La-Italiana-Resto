@@ -4,6 +4,10 @@
     font-family: 'Charm', cursive;
 }
 
+
+/* Media queries */
+
+
 @media (max-width: 576px){
     .cajaComidas{
         width: 94%;
@@ -23,6 +27,19 @@
     .ubicacion{
         width: 96%;
     }
+    .form>form>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 96%;
+    }
+    .casillas{
+        width: 95%;
+    }
+    footer li{
+        display: block;
+    }
 }
 
 @media (min-width: 576px){
@@ -40,6 +57,15 @@
     }
     .navbar li{
         display: inline;
+    }
+    .form>form>div{
+        width: 85%;
+    }
+    .casillas{
+        width: 75%;
+    }
+    footer li{
+        display: block;
     }
 }
 
@@ -59,6 +85,12 @@
         align-content: center;
         width: 96%;
     }
+    .form>form>div{
+        width: 70%;
+    }
+    footer li{
+        display: inline;
+    }
 }
 
 
@@ -69,18 +101,9 @@
     .ubicacion{
         width: 46%;
     }
-}
-
-h1{
-    font-size: 40px;
-}
-
-h3{
-    font-size: 20px;
-}
-
-p{
-    font-size: 15px;
+    .form>form>div{
+        width: 50%;
+    }
 }
 
 body, header, main, footer{
@@ -89,6 +112,8 @@ body, header, main, footer{
     padding: 3px;
     background-color: black;
 }
+
+
 
 header{
     background-color: rgba(86, 21, 21, 0.4);
@@ -106,8 +131,7 @@ header{
 
 .cajaLogo{
     display: inline;
-    margin: 3px;
-    padding: 3px;
+    margin: auto;
 }
 
 .navbar{
@@ -136,18 +160,18 @@ main{
     justify-content: space-around;
     align-content: center;
     background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjh54-min.jpg);
-    min-height: 600px;
+    min-height: 40vw;
+    background-size: 123%;
     background-position: center;
-    font-size: 50px;
     color: antiquewhite;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 #seccion1 h2{
     font-family: 'Tangerine', cursive;
     background-color: black;
     opacity: 0.7;
-    font-size: 100px;
+    font-size: 8vw;
     margin: auto;
     text-align: center;
 }
@@ -181,6 +205,14 @@ main{
     border-radius: 5px;
 }
 
+.cajaComidas h2{
+    font-size: 25px;
+}
+
+.cajaComidas p{
+    font-size: 18px;
+}
+
 footer{
     font-size: 40px;
     display: flex;
@@ -194,10 +226,6 @@ footer{
 footer>ul{
     margin: auto;
     margin-left: 10px;
-}
-
-footer li{
-    display: inline;
 }
 
 footer a{
@@ -254,102 +282,34 @@ footer a{
 /* ACA ARRANCA CSS DE MAURO */
 
 
+.mainNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-
+#crear-comentario{
+    background-color: rgb(54, 52, 52);
+    border-radius: 15px;
+    border-style: double;
+    color: aliceblue;
+    width: 98%;
+}
 
 .casillas-comentarios{
     background-color: rgba(86, 21, 21, 0.8);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
     color: antiquewhite;
-    border-radius: 15px;
     border-style: double;
-    padding-bottom: 30px;
-    padding-top: 5px;
-    padding-left: 0px;
-    margin-right: 210px;
-    
+    width: 98%;    
 }
 
-@media (max-width: 600px) {
-    .casillas-comentarios{ width: 550px;
-        height: 50px;
-        padding-bottom: 90px;
-    }
-}
-@media (min-width: 600px) {
-            .casillas-comentarios{ width: 550px;
-                height: 50px;
-                padding-bottom: 90px;
-        
-
-    }
-}
-@media (min-width: 760px){
-         .casillas-comentarios{width: 1100px;
-
-}
-}
-#crear-comentario{
-    background-color: rgb(54, 52, 52);
-    border-radius: 15px;
-    border-style: double;
-    color: aliceblue;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
-    
-    
+#lista-reseñas li{
+    list-style: none;
 }
 
-@media (max-width: 600px) {
-    #crear-comentario{ width: 550px;
-        height: 50px;
-    }
-}
-@media (min-width: 760px){
-    #crear-comentario{width: 1100px;
-        
-        
-
-}
-}
-
-
-#cuerpo{
-    background-image:  url(https://img.freepik.com/foto-gratis/harina-suelta-encuentra-fondo-negro_1304-3388.jpg?w=900&t=st=1684719773~exp=1684720373~hmac=6461cf8fe92b09189daa714111c4d6202861b5124181f4cd3ba8f8c4256eef1d);
-    background-repeat:no-repeat;
-    background-size: 250%;
-    color: aliceblue;
-    border-style: double;   
-    background-color: black;
-}
- 
-   @media (max-width: 600px) {
-   body { background-repeat: repeat;
-          padding: 50px;
-          width: 630px;
-}
-   
-      
-   }
-
-   @media (min-width: 600px) {
-    body { background-repeat: repeat;
-           padding: 50px;
-           width: 735px;
-        }
-    }
-    @media (min-width: 760px) {
-        body { background-repeat:repeat;
-               padding: 50px;
-               width: 1140px;
-               
-            }
-
-   }
- */
 .conteiner-1{
     background-color: rgb(48, 47, 47);
     margin: 5%;
@@ -438,48 +398,53 @@ footer a{
 
 
 
+
+
 /*ACA ARRANCA EL CSS DE MARIA EMILIA*/
 
 /*Estilos de las áreas*/
 
+.mainContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .form{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: center;
     background-color:black;
     height: auto;
-    width: 98,2%;
+    width: 94%;
+    margin: 10px;
     color: white;
     font-weight: bold;
     background-color: rgba(86, 21, 21, 0.4);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
-    margin-bottom: 3%;
-    margin-left: 0,9%;
-    margin-right: 0,9%;
-
-}   
+}
 
 .form>form{
-    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
 }
 
 .form>form>div{
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
 
 .datos {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width:98,2%;
-    margin-bottom: 3%;
-    margin-left: 0,9%;
-    margin-right: 0,9%;
-    padding-bottom: 100px;
+    width:94%;
+    margin: 10px;
+    padding-bottom: 50px;
     background-color: rgba(86, 21, 21, 0.4);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
@@ -499,27 +464,24 @@ footer a{
 /*Estilos de texto, títulos, etc*/
 .titulo{
     font-size: 60px;
-    text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .subtitulo{
     font-size: 40px;
-    text-align: center;
     margin: 30px;
 }
 
 .texto{
-    font-size: 30px;
     text-align: center;
+    font-size: 30px;
 }
 
 .button{
     display: flex;
-    font-family: 'Charm', cursive;
     font-size: 18px;
-    text-align: center;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -527,38 +489,15 @@ footer a{
 }
 
 .casillas{
-    height: 50px;
-    width: 35vw;
+    height: 40px;
     font-size: 25px;
     text-align: start;
     border-radius: 7px;
 }
 
-/*media queries */
-@media (max-width:600px){
-    /*Celular*/    
-    .casillas{
-        width: 50%;
-    }
+#mensaje{
+    height: 120px;
 }
-
-@media (min-width:600px){
-    /*Tablet*/    
-    .casillas{
-        width: 60%;
-    }
-    
-}
-
-@media (min-width:720px) {
-    /*Computadora*/
-
-    .casillas{
-        width: 50%;
-    }
-
-}
-
 
 /* ACA ARRANCA CSS SUCURSALES */
 
