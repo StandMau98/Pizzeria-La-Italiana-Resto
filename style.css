@@ -5,13 +5,21 @@
 }
 
 @media (max-width: 576px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
     .cajaComidas{
         width: 94%;
     }
+    #logo{
+        height: 60px;
+        width: 60px;
+    }
     .navbar{
-        font-size: 50px;
+        font-size: 40px;
         display: block;
-        align-content: end;
+        align-content: center;
         margin:auto;
     }
     .navbar li{
@@ -22,27 +30,67 @@
     }
     .ubicacion{
         width: 96%;
+    }
+    .form>form>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 96%;
+    }
+    .casillas{
+        width: 95%;
+    }
+    footer li{
+        display: block;
+    }
+    footer{
+        font-size: 35px;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media (min-width: 576px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .pagMenu{
         width: 96%;
     }
     .ubicacion{
         width: 96%;
     }
+    #logo{
+        height: 6vw;
+        width: 6vw;
+    }
     .navbar{
-        font-size: 50px;
-        display: inline;
-        align-content: end;
-        margin:auto;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
     }
     .navbar li{
         display: inline;
     }
+    .form>form>div{
+        width: 85%;
+    }
+    .casillas{
+        width: 75%;
+    }
+    footer li{
+        display: inline;
+    }
+    footer{
+        font-size: 3vw;
+        display: flex;
+        flex-direction: row;
+    }
 }
-
 
 @media (min-width: 768px ){
     .cajaComidas{
@@ -59,32 +107,30 @@
         align-content: center;
         width: 96%;
     }
+    .form>form>div{
+        width: 70%;
+    }
 }
 
-
 @media (min-width: 1200px){
+    .navbar{
+        font-size: 50px;
+    }
     .cajaComidas{
         width: 31%;
     }
     .ubicacion{
         width: 46%;
     }
-}
-
-h1{
-    font-size: 40px;
-}
-
-h3{
-    font-size: 20px;
-}
-
-p{
-    font-size: 15px;
+    .form>form>div{
+        width: 50%;
+    }
+    footer{
+        font-size: 4vw;
+    }
 }
 
 body, header, main, footer{
-/*    border: 3px blue solid;*/
     margin: 0px;
     padding: 3px;
     background-color: black;
@@ -92,27 +138,21 @@ body, header, main, footer{
 
 header{
     background-color: rgba(86, 21, 21, 0.4);
-    display: flex;
-    flex-direction: row;
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
 }
 
 #logo{
-    height: 70px;
-    width: 70px;
     display: inline-block;
 }
 
 .cajaLogo{
     display: inline;
-    margin: 3px;
-    padding: 3px;
+    margin: auto;
 }
 
 .navbar{
     margin:auto;
-    margin-right: 10px;
     opacity: 1;
 }
 
@@ -136,18 +176,18 @@ main{
     justify-content: space-around;
     align-content: center;
     background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjh54-min.jpg);
-    min-height: 600px;
+    min-height: 50vw;
+    background-size: 170%;
     background-position: center;
-    font-size: 50px;
     color: antiquewhite;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 #seccion1 h2{
     font-family: 'Tangerine', cursive;
     background-color: black;
     opacity: 0.7;
-    font-size: 100px;
+    font-size: 10vw;
     margin: auto;
     text-align: center;
 }
@@ -181,10 +221,16 @@ main{
     border-radius: 5px;
 }
 
+.cajaComidas h2{
+    font-size: 25px;
+}
+
+.cajaComidas p{
+    font-size: 18px;
+}
+
 footer{
-    font-size: 40px;
-    display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-content: center;
     background-color: rgba(86, 21, 21, 0.4);
     border: 3px rgba(167, 166, 163, 0.452) solid;
@@ -193,11 +239,6 @@ footer{
 
 footer>ul{
     margin: auto;
-    margin-left: 10px;
-}
-
-footer li{
-    display: inline;
 }
 
 footer a{
@@ -207,11 +248,6 @@ footer a{
     font-weight: bold;
     display: inline;
 }
-
-
-
-/* ACA EMPIEZA CSS MENU */
-
 
 #seccion3{
     display: flex;
@@ -244,323 +280,15 @@ footer a{
     margin: 5px;
 }
 
-/* ACA ARRANCA CSS SUCURSALES */
-
-
-
-
-
-
-/* ACA ARRANCA CSS DE MAURO */
-
-
-
-
-
-.casillas-comentarios{
-    background-color: rgba(86, 21, 21, 0.8);
-    border: 3px rgba(167, 166, 163, 0.452) solid;
-    border-radius: 15px;
+#weatherParagraph{
+    font-size: 2.5vw;
     color: antiquewhite;
-    border-radius: 15px;
-    border-style: double;
-    padding-bottom: 30px;
-    padding-top: 5px;
-    padding-left: 0px;
-    margin-right: 210px;
-    
-}
-
-@media (max-width: 600px) {
-    .casillas-comentarios{ width: 550px;
-        height: 50px;
-        padding-bottom: 90px;
-    }
-}
-@media (min-width: 600px) {
-            .casillas-comentarios{ width: 550px;
-                height: 50px;
-                padding-bottom: 90px;
-        
-
-    }
-}
-@media (min-width: 760px){
-         .casillas-comentarios{width: 1100px;
-
-}
-}
-#crear-comentario{
-    background-color: rgb(54, 52, 52);
-    border-radius: 15px;
-    border-style: double;
-    color: aliceblue;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
-    
-    
-}
-
-@media (max-width: 600px) {
-    #crear-comentario{ width: 550px;
-        height: 50px;
-    }
-}
-@media (min-width: 760px){
-    #crear-comentario{width: 1100px;
-        
-        
-
-}
-}
-
-
-#cuerpo{
-    background-image:  url(https://img.freepik.com/foto-gratis/harina-suelta-encuentra-fondo-negro_1304-3388.jpg?w=900&t=st=1684719773~exp=1684720373~hmac=6461cf8fe92b09189daa714111c4d6202861b5124181f4cd3ba8f8c4256eef1d);
-    background-repeat:no-repeat;
-    background-size: 250%;
-    color: aliceblue;
-    border-style: double;   
-    background-color: black;
-}
- 
-   @media (max-width: 600px) {
-   body { background-repeat: repeat;
-          padding: 50px;
-          width: 630px;
-}
-   
-      
-   }
-
-   @media (min-width: 600px) {
-    body { background-repeat: repeat;
-           padding: 50px;
-           width: 735px;
-        }
-    }
-    @media (min-width: 760px) {
-        body { background-repeat:repeat;
-               padding: 50px;
-               width: 1140px;
-               
-            }
-
-   }
- */
-.conteiner-1{
-    background-color: rgb(48, 47, 47);
-    margin: 5%;
-    display: flex;
-    justify-content: center;
-    color: aliceblue;
-    border-radius: 10%; 
-}
-
-.punto{
-    display: inline;
-    background-color: aliceblue;
-}
-
-.Carrusel{
-    width: 2000px;
-    height: auto;
-    margin: 10px auto 10px;
-
-    animation: slide 15s infinite ease-in-out;
-}
-
-.Carrusel ul{
-    display:flex;
-    padding: 0px;
-    width: 400px;
-}
-
-.Carrusel li{
-    list-style: none;
-    width: 300px;
-    margin-left: 400px;
-}
-.Carrusel img{
-    width: 600px;
-    height: 500px;
-    border:15px;
-    border-style: groove;
-    border-color:rgb(33, 28, 28);
-}
-
-@keyframes slide{
-    0%{margin-left: 0%;}
-    35%{margin-left: 0%;}
-
-    45%{margin-left: -100%;}
-    65%{margin-left: -100%;}
-    
-    70%{margin-left: -150%;}
-    100%{margin-left: -150%;}
-}
-
-@media (max-width: 600px) {
-    .Carrusel { width: 500px;
-        
-    }
-    .Carrusel img{
-        width: 300px;
-        height: auto;
-    }
-}
-@media(min-width: 600px) {
-    .Carrusel { width: 300px;
-        
-    }
-    .Carrusel img{
-        width: 300px;
-        height: auto;
-        }
- 
-
-}
-
-@media (min-width: 760px){
-    .Carrusel { width: 1000px;
-        
-    }
-    .Carrusel img{
-        width: 400px;
-        height: auto;
-        }
-    
-    
-
-}
-
-
-
-/*ACA ARRANCA EL CSS DE MARIA EMILIA*/
-
-/*Estilos de las áreas*/
-
-.form{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    background-color:black;
-    height: auto;
-    width: 98,2%;
-    color: white;
-    font-weight: bold;
-    background-color: rgba(86, 21, 21, 0.4);
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.7);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
-    margin-bottom: 3%;
-    margin-left: 0,9%;
-    margin-right: 0,9%;
-
-}   
-
-.form>form{
-    width: 50vw;
+    margin: 5px;
 }
-
-.form>form>div{
-    display: flex;
-    justify-content: space-between;
-}
-
-.datos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width:98,2%;
-    margin-bottom: 3%;
-    margin-left: 0,9%;
-    margin-right: 0,9%;
-    padding-bottom: 100px;
-    background-color: rgba(86, 21, 21, 0.4);
-    border: 3px rgba(167, 166, 163, 0.452) solid;
-    border-radius: 15px;
-    font-size: 100%;
-    color: white;
-    text-align: center;
-
-}
-
-.datos a{
-    font-size: 25px;
-    text-decoration: none;
-    color: antiquewhite;
-}
-
-
-/*Estilos de texto, títulos, etc*/
-.titulo{
-    font-size: 60px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.subtitulo{
-    font-size: 40px;
-    text-align: center;
-    margin: 30px;
-}
-
-.texto{
-    font-size: 30px;
-    text-align: center;
-}
-
-.button{
-    display: flex;
-    font-family: 'Charm', cursive;
-    font-size: 18px;
-    text-align: center;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-}
-
-.casillas{
-    height: 50px;
-    width: 35vw;
-    font-size: 25px;
-    text-align: start;
-    border-radius: 7px;
-}
-
-/*media queries */
-@media (max-width:600px){
-    /*Celular*/    
-    .casillas{
-        width: 50%;
-    }
-}
-
-@media (min-width:600px){
-    /*Tablet*/    
-    .casillas{
-        width: 60%;
-    }
-    
-}
-
-@media (min-width:720px) {
-    /*Computadora*/
-
-    .casillas{
-        width: 50%;
-    }
-
-}
-
-
-/* ACA ARRANCA CSS SUCURSALES */
 
 .mainSucursales h1{
     margin: 30px;
@@ -601,4 +329,125 @@ footer a{
     height: 250px;
     width: 250px;
     border-radius: 15px;
+}
+
+.mainNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#crear-comentario{
+    background-color: rgb(54, 52, 52);
+    border-radius: 15px;
+    border-style: double;
+    color: aliceblue;
+    width: 98%;
+}
+
+.casillas-comentarios{
+    background-color: rgba(86, 21, 21, 0.8);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    color: antiquewhite;
+    border-style: double;
+    width: 98%;    
+}
+
+#lista-reseñas li{
+    list-style: none;
+}
+
+.mainContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    background-color:black;
+    height: auto;
+    width: 94%;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+}
+
+.form>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+}
+
+.form>form>div{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.datos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:94%;
+    margin: 10px;
+    padding-bottom: 50px;
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    font-size: 100%;
+    color: antiquewhite;
+    text-align: center;
+
+}
+
+.datos a{
+    font-size: 25px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 40px;
+    margin: 30px;
+}
+
+.texto{
+    text-align: center;
+    font-size: 30px;
+}
+
+.button{
+    display: flex;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.casillas{
+    height: 40px;
+    font-size: 25px;
+    text-align: start;
+    border-radius: 7px;
+}
+
+#mensaje{
+    height: 120px;
 }
